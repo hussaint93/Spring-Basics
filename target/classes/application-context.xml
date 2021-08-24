@@ -11,10 +11,12 @@
 	<bean id="employee"
 		class="com.spring.demo.EmployeeBean" autowire="byName">
 		<property name="fullName" value="Hussain Sadriwalla" />
+		<property name="departmentBean" ref="departmentBean1"></property>
 	</bean>
 
-	<bean id="departmentBean"
+	<bean id="departmentBean1"
 		class="com.spring.demo.DepartmentBean">
 		<property name="name" value="Human Resource" />
+		
 	</bean>
 </beans>
